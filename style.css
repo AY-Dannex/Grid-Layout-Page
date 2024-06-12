@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 100;
+    background-color: #0A0A51;
+}
+
+header nav{
+    display: flex;
+    padding: 10px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo h1{
+    color: #1CD02B;
+}
+
+header nav span{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav span a{
+    color: #fff;
+    font-size: 15px;
+    transition: all .8s;
+}
+
+header nav span a:hover{
+    color: #1CD02B;
+}
+
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: #0A0A51;
+    top: 20px;
+    padding-top: 10px;
+    left: -27px;
+    z-index: 10;
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover{
+    background-color: #1CD02B;
+    color: #fff;
+}
+
+.dropdown-content li{
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.second-dropdown{
+    display: inline-block;
+}
+
+.second-dropdown-content{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 95px;
+    background-color: #0A0A51;
+}
+
+.second-dropdown-content a{
+    display: block;
+}
+
+.second-dropdown:hover .second-dropdown-content{
+    display: inline-block;
+}
+
+header nav .profile-pic{
+    display: flex;
+}
+
+.pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+p{
+    font-size: 11px;
+    color: #555;
+
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    background-color: #ddd;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    padding: 15px;
+}
+
+main div{
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+main .top-left{
+    grid-row: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;   
+}
+
+main .top-left span{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #0A0A51;
+}
+
+main .top-left span form{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .top-left span form input{
+    width: 220px;
+    padding: 6px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+main .top-left span form button{
+    padding: 3px 10px;
+    background-color: #171774;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+main .top-left span form button:hover{
+    background-color: #1CD02B;
+}
+
+main .aside-left, main .main{
+    grid-row: span 4;
+    padding: 15px 25px;
+}
+
+.content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.content1 .sub-content1{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .aside-left .content2{
+    padding: 15px 10px;
+}
+
+main .aside-left .content3{
+    max-width: 430px;
+    margin: auto;
+    border: .5px solid #999;
+}
+
+main .aside-left .content3 img{
+    width: 100%;
+}
+
+main .aside-left .content3 span{
+    display: inline-block;
+    padding: 0px 10px 10px 10px;
+    text-align: justify;
+}
+
+main .aside-left .content3 a, main .aside-left .content3 p{
+    font-size: 11px;
+    /* text-align: justify; */
+}
+
+main .main .content2 a{
+    color: #0A0A51;
+    display: inline;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding-top: 20px;
+}
+
+main .main .content3{
+    max-width: 330px;
+    margin: auto;
+    border: .5px solid #ddd;
+    margin-top: 20px;
+}
+
+main .main .content3 img{
+    width: 100%;
+}
+
+main .main .content3 span{
+    display: inline-block;
+    text-align: justify;
+    width: 100%;
+    padding: 10px;
+}
+
+main .aside-right{
+    grid-row: span 5;
+    padding: 10px 0px 0px 0px;
+    position: relative;
+}
+
+main .aside-right h2{
+    color: #0A0A51;
+    font-size: 20px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+main .aside-right .content{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+main .aside-right .content .sub-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+main .aside-right .content .sub-content .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main .aside-right .content .sub-content span a{
+    font-size: 14px;
+    color: #000;
+}
+
+main .aside-right .content .sub-content button{
+    padding: 4px 15px;
+    border-radius: 20px;
+    position: relative;
+    top: 2px;
+    border: none;
+    background-color: #171774;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all .3s;
+}
+
+main .aside-right .content .sub-content button:hover{
+    background-color: #1CD02B;
+}
+
+main .aside-right .content  .see-more{
+    background-color: #171774;
+    padding: 12px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+main .aside-right .content .see-more:hover{
+    background-color: #1CD02B;
+}
+
+
+main .main-bottom{
+    grid-row: span 1.5;
+    padding: 20px;
+}
+
+main .main-bottom .content2{
+    padding: 20px 0 0 15px;
+}
+
+
+@media screen and (max-width: 1130px) {
+    main .main, main .main-bottom{
+        padding: 20px 10px;
+    }
+    main .main .content1 span, main .main-bottom .content1 span{
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+    header nav{
+        padding: 10px 20px;
+    }
+
+    header nav span{
+        display: none;
+    }
+
+    main{
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr auto auto 0.1fr 1fr;
+        grid-template-areas:
+         " tl "
+         " al "
+         " mn "
+         " mb "
+         " ar "
+        ;
+    }
+
+    main .top-left{
+        grid-area: tl;
+    }
+
+    main .top-left span form input{
+        width: 60%;
+    }
+
+    main .aside-left{
+        grid-area: al;
+    }
+
+    main .aside-left .content3{
+        max-width: 700px;
+    }
+
+    main .main{
+        grid-area: mn;
+    }
+
+    main .main .content3{
+        max-width: 500px;
+    }
+
+    main .aside-right{
+        grid-area: ar;
+        height: 700px;
+    }
+
+    main .main-bottom{
+        grid-area: mb;
+    }
+}
+
+@media screen and (max-width: 586px){
+    main .top-left span form input{
+        width: 200px;
+    }
+}
